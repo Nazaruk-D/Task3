@@ -64,7 +64,6 @@ class Game {
     constructor(moves) {
         this.moves = moves.map((name) => new Move(name));
         this.rules = new RulesGenerator(this.moves).generateRules();
-        console.log(this.rules)
     }
 
     play() {
@@ -94,7 +93,10 @@ class Game {
                         console.log('Invalid input. Please enter a number 1 or 0.');
                         console.log('1 - Play');
                         console.log('0 - Exit');
+                        rl.close();
+                        this.play();
                     } else if (choice === 1) {
+                        rl.close();
                         this.play();
                     } else if (choice === 0) {
                         rl.close();
