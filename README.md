@@ -9,5 +9,5 @@ ___
 
 
 ## How to start a game
-After git clone 'link' install all dependencies from package.json run the game. Open your terminal and type the following command.
+After git clone 'link' install all dependencies from package.json and run the game. Open your terminal and type the following command.
 ### Example: `node task3.js scissors rock paper`
